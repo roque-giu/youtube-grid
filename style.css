@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Medium.ttf);
+}
+*{
+    font-family: 'Roboto';
+}
+
+/*body{
+    display: grid;
+    grid: 56px repeat(3, 141px 76px)/ 30px 188px repeat(4, 282px);
+}*/
+.head{
+    display: grid;
+    grid: 56px / 72px 146px 2fr 200px;
+    place-items: center center;
+}
+
+/* Formatação do campo de pesquisa */
+.search{
+    display: flex;
+    border: 1px solid #cccccc;
+}
+#campo{
+    width: 348px;
+    height: 40px;
+}
+#lupa{
+    width: 57px;
+    height: 40px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc
+}
+#lupa img{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 218px 1060px;
+}
+
+/*formatação dos items à esquerda*/
+#icons{
+    display: grid;
+    grid-template-columns: repeat(3, 55px);
+    place-items: center;
+}
+
+.menu-lateral{
+    display: grid;
+    grid: repeat(10, 50px) / 48px 170px;
+    place-items: center right;
+    gap: 0px 10px;
+}
+.menu-lateral p{
+    width: 170px;
+    place-self: left;
+}
+
+/*formatação da página*/
+.pagina{
+    width: 100%;
+    display: grid;
+    grid: repeat(3, 160px 76px) / repeat(4, 265px);
+    background-color: #f8f8f8;
+    grid-auto-flow: column;
+}
+.thumb{
+    width: 250px;
+    place-self: center;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 52px 197px;
+    grid-template-rows: repeat(2, 37px);
+    gap: 0px 10px;
+}
+h1{
+    font-size: 14px;
+}
+.title p{
+    font-size: 12px;
+    color: #515151;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.title img{
+    justify-self: right;
+    width: 42px;
+    height: 42px;
+}
